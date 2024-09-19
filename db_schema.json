@@ -1,0 +1,112 @@
+{
+    "tables": {
+        "Artist": {
+            "columns": [
+                "ArtistId",
+                "Name"
+            ]
+        },
+        "Album": {
+            "columns": [
+                "AlbumId",
+                "Title",
+                "ArtistId"
+            ]
+        },
+        "Employee": {
+            "columns": [
+                "EmployeeId",
+                "LastName",
+                "FirstName",
+                "Title",
+                "ReportsTo",
+                "BirthDate",
+                "HireDate",
+                "Address",
+                "City",
+                "State",
+                "Country",
+                "PostalCode",
+                "Phone",
+                "Fax",
+                "Email"
+            ]
+        },
+        "Customer": {
+            "columns": [
+                "CustomerId",
+                "FirstName",
+                "LastName",
+                "Company",
+                "Address",
+                "City",
+                "State",
+                "Country",
+                "PostalCode",
+                "Phone",
+                "Fax",
+                "Email",
+                "SupportRepId"
+            ]
+        },
+        "Invoice": {
+            "columns": [
+                "InvoiceId",
+                "CustomerId",
+                "InvoiceDate",
+                "BillingAddress",
+                "BillingCity",
+                "BillingState",
+                "BillingCountry",
+                "BillingPostalCode",
+                "Total"
+            ]
+        },
+        "InvoiceLine": {
+            "columns": [
+                "InvoiceLineId",
+                "InvoiceId",
+                "TrackId",
+                "UnitPrice",
+                "Quantity"
+            ]
+        },
+        "Track": {
+            "columns": [
+                "TrackId",
+                "Name",
+                "AlbumId",
+                "MediaTypeId",
+                "GenreId",
+                "Composer",
+                "Milliseconds",
+                "Bytes",
+                "UnitPrice"
+            ]
+        },
+        "Playlist": {
+            "columns": [
+                "PlaylistId",
+                "Name"
+            ]
+        },
+        "PlaylistTrack": {
+            "columns": [
+                "PlaylistId",
+                "TrackId"
+            ]
+        },
+        "Genre": {
+            "columns": [
+                "GenreId",
+                "Name"
+            ]
+        },
+        "MediaType": {
+            "columns": [
+                "MediaTypeId",
+                "Name"
+            ]
+        }
+    }
+}
